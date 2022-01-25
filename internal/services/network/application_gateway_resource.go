@@ -166,7 +166,8 @@ func resourceApplicationGateway() *pluginsdk.Resource {
 			},
 
 			// Required
-			"backend_address_pool": { //lintignore:S016
+			//lintignore:S016,S023
+			"backend_address_pool": {
 				Type: func() pluginsdk.ValueType {
 					if features.ThreePointOh() {
 						return pluginsdk.TypeSet
