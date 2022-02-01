@@ -49,3 +49,5 @@ require (
 )
 
 go 1.16
+
+replace github.com/hashicorp/go-azure-helpers => /Users/tom/go/src/github.com/hashicorp/go-azure-helpers
