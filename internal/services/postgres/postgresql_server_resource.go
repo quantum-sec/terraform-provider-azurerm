@@ -129,7 +129,7 @@ func resourcePostgreSQLServer() *pluginsdk.Resource {
 					string(postgresql.OneZeroFullStopZero),
 				}, true),
 				DiffSuppressFunc: func() schema.SchemaDiffSuppressFunc {
-					if !features.ThreePointOhBetaResources() {
+					if !features.ThreePointOhBeta() {
 						return suppress.CaseDifference
 					}
 					return nil

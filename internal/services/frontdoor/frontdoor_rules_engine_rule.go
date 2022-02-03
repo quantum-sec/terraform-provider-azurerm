@@ -149,7 +149,7 @@ func resourceFrontDoorRulesEngine() *pluginsdk.Resource {
 									"negate_condition": {
 										Type:     pluginsdk.TypeBool,
 										Optional: true,
-										Default:  !features.ThreePointOhBetaResources(),
+										Default:  !features.ThreePointOhBeta(),
 									},
 
 									"value": {
