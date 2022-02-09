@@ -225,3 +225,10 @@ func StringMatch(r *regexp.Regexp, message string) func(interface{}, string) ([]
 func StringNotInSlice(invalid []string, ignoreCase bool) func(interface{}, string) ([]string, []error) {
 	return validation.StringNotInSlice(invalid, ignoreCase)
 }
+
+// ListOfUniqueStrings is a ValidateFunc that ensures a list has no
+// duplicate items in it. It's useful for when a list is needed over a set
+// because order matters, yet the items still need to be unique.
+func ListOfUniqueStrings(i interface{}, k string) ([]string, []error) {
+	return validation.ListOfUniqueStrings(i, k)
+}

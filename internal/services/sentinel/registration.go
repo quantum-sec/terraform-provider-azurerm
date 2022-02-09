@@ -48,7 +48,16 @@ func (r Registration) SupportedResources() map[string]*pluginsdk.Resource {
 		"azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection": resourceSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection(),
 		"azurerm_sentinel_data_connector_office_365":                                    resourceSentinelDataConnectorOffice365(),
 		"azurerm_sentinel_data_connector_threat_intelligence":                           resourceSentinelDataConnectorThreatIntelligence(),
-		"azurerm_sentinel_automation_rule":                                              resourceSentinelAutomationRule(),
+		"azurerm_sentinel_data_connector_threat_intelligence_taxii":                     resourceSentinelDataConnectorThreatIntelligenceTaxii(),
+		"azurerm_sentinel_data_connector_office_atp":                                    resourceSentinelDataConnectorOfficeATP(),
+		"azurerm_sentinel_data_connector_aws_s3":                                        resourceSentinelDataConnectorAwsS3(),                       // todo: unit test pending
+		"azurerm_sentinel_data_connector_dynamics_365":                                  resourceSentinelDataConnectorDynamics365(),                 // todo: unit test pending
+		"azurerm_sentinel_data_connector_microsoft_threat_intelligence":                 resourceSentinelDataConnectorMicrosoftThreatIntelligence(), // todo: unit test pending
+		"azurerm_sentinel_data_connector_microsoft_threat_protection":                   resourceSentinelDataConnectorMicrosoftThreatProtection(),   // todo: unit test pending
+		"azurerm_sentinel_data_connector_office_irm":                                    resourceSentinelDataConnectorOfficeIRM(),                   // todo: unit test pending
+		//"azurerm_sentinel_data_connector_codeless_api_polling":                          resourceSentinelDataConnectorCodelessApiPolling(), //todo: implementation pending
+		//"azurerm_sentinel_data_connector_codeless_ui":                                   resourceSentinelDataConnectorCodelessUI(),  //todo: implementation pending
+		"azurerm_sentinel_automation_rule": resourceSentinelAutomationRule(),
 	}
 }
 
